@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eye Rule Timer</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-teal-500 text-white w-full p-6 flex justify-between items-center sticky top-0 z-10 shadow-lg">
+        <h1 class="text-2xl font-bold">Dhristi</h1>
+        <div id="timer" class="text-xl">00:20:00</div>
+        <button id="openFullView" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded">Open Full View</button>
+    </header>
+    
+    <main class="flex-1 w-full max-w-7xl mx-auto p-8">
+        <div class="exercise-sections mt-12 flex items-center justify-center flex-wrap">
+            <div class="section bg-white shadow-lg rounded-lg hover:shadow-xl p-12 mx-8 text-center w-full md:w-1/3">
+                <h2 class="text-2xl font-bold mb-6">Morning Exercises</h2>
+                <p class="text-lg">Details about morning exercises.</p>
+            </div>
+            <img src="carousel-icon.png" alt="Carousel Icon" class="carousel-icon w-12 h-12 mx-8" />
+            <div class="section bg-white shadow-lg rounded-lg hover:shadow-xl p-12 mx-8 text-center w-full md:w-1/3">
+                <h2 class="text-2xl font-bold mb-6">Afternoon</h2>
+                <p class="text-lg">Details about afternoon activities.</p>
+            </div>
+            <img src="carousel-icon.png" alt="Carousel Icon" class="carousel-icon w-12 h-12 mx-8" />
+            <div class="section bg-white shadow-lg rounded-lg hover:shadow-xl p-12 mx-8 text-center w-full md:w-1/3">
+                <h2 class="text-2xl font-bold mb-6">Evening</h2>
+                <p class="text-lg">Details about evening activities.</p>
+            </div>
+        </div>
+
+        <div class="timer-setup bg-white shadow-lg rounded-lg p-12 mt-12 flex flex-col items-center">
+            <div class="custom-timer-input">
+                <input type="number" 
+                       id="customTimerInput" 
+                       placeholder="Enter minutes" 
+                       class="border border-gray-300 rounded p-4 mr-4 w-48 focus:border-teal-500 focus:outline-none" />
+                <button id="setCustomTimer" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">
+                    Set Timer
+                </button>
+            </div>
+            
+            <div class="timer-controls mt-8">
+                <button id="set-5-min" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Set to 5 min</button>
+                <button id="set-10-min" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Set to 10 min</button>
+                <button id="set-15-min" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Set to 15 min</button>
+                <button id="set-20-min" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Set to 20 min</button>
+                <button id="set-30-min" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Set to 30 min</button>
+                <button id="pause-resume-timer" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Pause/Resume</button>
+                <button id="reset-timer" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-8 rounded">Reset</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

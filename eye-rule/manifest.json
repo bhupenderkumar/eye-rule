@@ -1,0 +1,10 @@
+{ 
+  "manifest_version": 3,
+  "name": "Eye Rule",
+  "version": "1.0",
+  "description": "A simple timer extension for eye rest.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": []
+}
